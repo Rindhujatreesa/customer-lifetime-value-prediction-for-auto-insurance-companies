@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>home</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+	<link rel="shortcut icon" href="favicon.ico"> 
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<!-- FontAwesome JS -->
+    <script defer src="../static/fontawesome/js/all.js"></script>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../static/plugins/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="../static/css/theme-1.css">
+<style>
+	
+    @media screen and (min-width: 360px) {
+         #mobi{
+          margin-left:0%;
+        }
+    }
+
+	@media screen and (min-width: 1000px) {
+         #mobi{
+          margin-left:-18%;
+        }
+    }
+
+	
+
+		.content {
+			color: black;
+		}
+
+
+</style>
+
+</head> 
+<body>
+	<header class="header text-center">	    
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html"></a></h1>
+			<nav class="navbar navbar-expand-lg navbar-dark" >
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+			</nav>
+		</div><!--//force-overflow-->
+	</header>
+	<div class="main-wrapper">
+		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
+			<div class="container">
+				<div class="profile-teaser media flex-column flex-lg-row">
+					<div >
+						<h1 class="name">Auto Insurance Customer Lifetime value Prediction</h1>
+						
+					</div><!--//med		<centre><h4 id="100" >
+						{{pred}}
+					  </h4>
+					</centre>
+						<br>
+				</div>
+			</div>
+		</section><!--//about-me-section-->
+		
+		<div class="main-wrapper">
+			<div class="container px-3 px-lg-5" id="mobi">
+				<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+					<form action='/detect' method="post">
+						Income <input type="text" name="agee" id="Income" class="validate"><br><br>
+						Monthly_premium_auto <input type="text" id="Monthly_premium_auto" name="Monthly_premium_auto" class="validate"><br><br>
+						Months_since_last_claim <input type="text" id="Months_since_last_claim" name="Months_since_last_claim" class="validate"><br><br>
+						Months_since_policy_inception<input type="text" id="Months_since_policy_inception"  name="Months_since_policy_inception" class="validate"><br><br>
+						Number_of_open_complaints<input type="text" id="Number_of_open_complaints" name="Number_of_open_complaints" class="validate"><br><br>
+						Number_of_policies<input type="text" id="Number_of_policies" name="Number_of_policies" class="validate"><br><br>
+						Total_claim_amount<input type="text"  id="Total_claim_amount" name="Total_claim_amount" class="validate"><br><br>
+						
+						State <br>
+						<input type="radio" name="Stateoption1" value="0">
+						<label for="0">Arizona</label>&nbsp;&nbsp;
+						<input type="radio"  name="Stateoption2" value="1">
+						<label for="1">California</label>&nbsp;&nbsp;
+						<input type="radio"  name="Stateoption3" value="2">
+						<label for="2">Nevada</label>&nbsp;&nbsp;
+						<input type="radio"  name="Stateoption4" value="3">
+						<label for="3">Oregon</label>&nbsp;&nbsp;
+						<input type="radio"  name="Stateoption5" value="4">
+						<label for="4">Washington</label><br><br>
+
+						Response <br>
+						<input type="radio"  name="Responseyes" value="1">
+						<label for="1">Yes</label> &nbsp;&nbsp;
+						<input type="radio"  name="Responseno" value="0">
+						<label for="0">No</label><br>
+
+						Coverage<br>
+						<input type="radio"  name="Coverageoption1" value="0">
+						<label for="option1">Basic</label>&nbsp;&nbsp;
+						<input type="radio"  name="Coverageoption2" value="1">
+						<label for="option2">Extended</label>&nbsp;&nbsp;
+						<input type="radio"  name="Coverageoption3" value="2">
+						<label for="option3">Premium</label><br><br>
+						
+						Education<br>
+						<input type="radio"  name="Educationoption1" value="0">
+						<label for="option1">Bachelor</label>&nbsp;&nbsp;
+						<input type="radio"  name="Educationoption2" value="1">
+						<label for="option2">College</label>&nbsp;&nbsp;
+						<input type="radio"  name="Educationoption3" value="2">
+						<label for="option3">Master</label>&nbsp;&nbsp;
+						<input type="radio"  name="Educationoption4" value="3">
+						<label for="option3">High School or Below</label>&nbsp;&nbsp;
+						<input type="radio"  name="Educationoption5" value="4">
+						<label for="option3">Doctor</label><br><br>
+						
+						Employment Status<br>
+						<input type="radio"  name="EmploymentStatusoption1" value="0">
+						<label for="option1">Employed</label>&nbsp;&nbsp;
+						<input type="radio"  name="EmploymentStatusoption2" value="1">
+						<label for="option2">Unemployed</label>&nbsp;&nbsp;
+						<input type="radio"  name="EmploymentStatusoption3" value="2">
+						<label for="option3">Medical leave</label>&nbsp;&nbsp;
+						<input type="radio"  name="EmploymentStatusoption4" value="3">
+						<label for="option3">Disabled</label>&nbsp;&nbsp;
+						<input type="radio"name="EmploymentStatusoption5" value="4">
+						<label for="option3">Retired</label><br><br>
+
+						Gender<br>
+						<input type="radio"  name="GenderMale" value="1">
+						<label for="1">Male</label> &nbsp;&nbsp;
+						<input type="radio"  name="GenderFemale" value="0">
+						<label for="0">Female</label><br>
+
+
+						
+						Location Code <br>
+						<input type="radio"  name="Locationoption1" value="0">
+						<label for="option1">Suburban</label>&nbsp;&nbsp;
+						<input type="radio"  name="Locationoption2" value="1">
+						<label for="option2">Rural</label>&nbsp;&nbsp;
+						<input type="radio"  name="Locationoption3" value="2">
+						<label for="option3">urban</label><br><br>
+						
+						Marital Status <br>
+						<input type="radio"  name="Maritaloption1" value="0">
+						<label for="option1">Married</label>&nbsp;&nbsp;
+						<input type="radio"  name="Maritaloption2" value="1">
+						<label for="option2">Single</label>&nbsp;&nbsp;
+						<input type="radio"  name="Maritaloption3" value="2">
+						<label for="option3">Divorced</label><br><br>
+						
+						
+						Renew Offer Type<br>
+						<input type="radio"  name="Renewoption1" value="0">
+						<label for="option1">Offer1</label>&nbsp;&nbsp;
+						<input type="radio"  name="Renewoption2" value="1">
+						<label for="option2">Offer2</label>&nbsp;&nbsp;
+						<input type="radio"  name="Renewoption3" value="2">
+						<label for="option3">Offer3</label>&nbsp;&nbsp;
+						<input type="radio"  name="Renewoption4" value="3">
+						<label for="option3">Offer4</label><br><br>
+
+						Sales_channel<br>
+						<input type="radio"  name="Sales_channeloption1" value="0">
+						<label for="option1">Agent</label>&nbsp;&nbsp;
+						<input type="radio"  name="Sales_channeloption2" value="1">
+						<label for="option2">Branch</label>&nbsp;&nbsp;
+						<input type="radio"  name="Sales_channeloption3" value="2">
+						<label for="option3">Call Center</label>&nbsp;&nbsp;
+						<input type="radio"  name="Sales_channeloption4" value="3">
+						<label for="option3">Web</label><br><br>
+						
+						Vehicle_class<br>
+						<input type="radio"  name="Vehicle_classoption1" value="0">
+						<label for="option1">Four-Door Car</label>&nbsp;&nbsp;
+						<input type="radio"  name="Vehicle_classoption2" value="1">
+						<label for="option2">Luxury Car</label>&nbsp;&nbsp;
+						<input type="radio"  name="Vehicle_classoption3" value="2">
+						<label for="option3">Luxury SUV </label>&nbsp;&nbsp;
+						<input type="radio"  name="Vehicle_classoption4" value="3">
+						<label for="option3">SUV</label>&nbsp;&nbsp;
+						<input type="radio"  name="Vehicle_classoption5" value="4">
+						<label for="option3">Sports Car</label>
+						<input type="radio"  name="Vehicle_classoption6" value="5">
+						<label for="option3">Two-Door Car</label>
+						<br><br>
+						
+						Vehicle_size <br>
+						<input type="radio"  name="Vehicle_sizeoption1" value="0">
+						<label for="option1">Large</label>&nbsp;&nbsp;
+						<input type="radio"  name="Vehicle_sizeoption2" value="1">
+						<label for="option2">Medium</label>&nbsp;&nbsp;
+						<input type="radio"  name="Vehicle_sizeoption3" value="2">
+						<label for="option3">Small</label><br><br>
+
+						<button type="submit" id="100" class="btn-large waves-effect waves-light orange" style="background-color:#54b689;width: 20%;color:#fafafa;border: none;">Predict</button>
+						
+
+
+
+					</form>	
+				</article>
+			</div><!--//container-->
+
+		</div><!--//main-wrapper-->
+
+
+
+		<div class="container"><hr></div>
+		
+
+
+
+				<footer class="footer text-center py-4">
+					<small class="copyright">Template designed by <a href="https://www.linkedin.com/in/nithin24" target="_blank">Nithin</a></small>
+				</footer>
+	</div><!--//main-wrapper-->
+	
+	<!-- Javascript --> 
+	<script>
+		//Animated Collapsibles
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			content.style.maxHeight = null;
+			} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+		}
+	</script>         
+	<script src="../static/plugins/jquery-3.4.1.min.js"></script>
+	<script src="../static/plugins/popper.min.js"></script> 
+	<script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../static/plugins/tiny-slider/min/tiny-slider.js"></script>
+	<script src="../static/js/testimonials.js"></script>
+	<!-- Dark Mode -->
+	<script src="../static/plugins/js-cookie.min.js"></script>
+	<script src="../static/js/dark-mode.js"></script>   
+</body>
+</html> 
