@@ -18,7 +18,7 @@ To address customer retention challenges faced by a US auto insurance company by
 ## Methodology
 **Data Analysis with Python:** Utilized Python libraries for data cleaning and pre-processing, ensuring data quality for accurate model training and analysis.<br>
 
-<a href="[url](https://github.com/nithin42/capstone/tree/capstone/CLF_Machine_learning)">**Machine Learning for CLV Prediction:**<a> Developed and implemented a machine learning model to predict individual customer lifetime value, enabling the identification of high-value customers for targeted retention strategies.<br>
+**Machine Learning for CLV Prediction:** Developed and implemented a machine learning model to predict individual customer lifetime value, enabling the identification of high-value customers for targeted retention strategies.<br>
 
 **Interactive Visualizations with Power BI:** Developed interactive dashboards using Power BI to visualize key CLV insights and trends, facilitating data-driven decision making for marketing and customer retention initiatives.<br>
 ![dashbord](https://github.com/nithin42/capstone/assets/52503252/a29ea4eb-8c0e-43e5-addf-0c834ec75bf7)
