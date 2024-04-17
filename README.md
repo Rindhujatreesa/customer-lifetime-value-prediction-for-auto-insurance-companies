@@ -47,5 +47,3 @@ This project showcases expertise in leveraging data science and machine learning
 
 ## Dataset Description
 The dataset represents Customer lifetime value of an Auto Insurance industry in the United States, it includes over 24 features and 9134 records to analyze the lifetime value of Customer.
-
-## References 
