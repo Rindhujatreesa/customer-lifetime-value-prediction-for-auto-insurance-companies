@@ -13,6 +13,8 @@ Customer Lifetime Value (CLV) signifies the worth of a customer to a company acr
 ## Project Goal
 To address customer retention challenges faced by a US auto insurance company by leveraging Customer Lifetime Value (CLV) prediction and analysis.
 
+![Blank diagram](https://github.com/nithin42/capstone/assets/52503252/1851a78e-7cc0-4f85-a190-64ced94ece2f)
+
 ## Methodology
 **Data Analysis with Python:** Utilized Python libraries for data cleaning and pre-processing, ensuring data quality for accurate model training and analysis.<br>
 
