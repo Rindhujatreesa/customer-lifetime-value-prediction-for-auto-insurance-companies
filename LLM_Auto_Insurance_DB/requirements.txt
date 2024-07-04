@@ -4,7 +4,7 @@ streamlit==1.22.0
 tiktoken==0.4.0
 faiss-cpu==1.7.4
 protobuf~=3.19.0
-langchain_experimental
+langchain-experimental
 mysql-connector-python
 pymysql
 sentence-transformers
