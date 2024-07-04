@@ -13,19 +13,20 @@ Customer Lifetime Value (CLV) signifies the worth of a customer to a company acr
 ## Project Goal
 To address customer retention challenges faced by a US auto insurance company X by leveraging Customer Lifetime Value (CLV) prediction and analysis.
 
-![Blank diagram](https://github.com/nithin42/capstone/assets/52503252/1851a78e-7cc0-4f85-a190-64ced94ece2f)
+![Blank diagram](Images/data_Pipeline.png)
 
 ## Methodology
 **Data Analysis with Python:** Utilized Python libraries for data cleaning and pre-processing, ensuring data quality for accurate model training and analysis.<br>
 
 **Machine Learning for CLV Prediction:** Developed and implemented a machine learning model to predict individual customer lifetime value, enabling the identification of high-value customers for targeted retention strategies.<br>
+![CLV Prediction Webpage](Images/prediction_webpage.PNG)
 
 **Interactive Visualizations with Power BI:** Developed interactive dashboards using Power BI to visualize key CLV insights and trends, facilitating data-driven decision making for marketing and customer retention initiatives.<br>
-![dashbord](https://github.com/nithin42/capstone/assets/52503252/a29ea4eb-8c0e-43e5-addf-0c834ec75bf7)
+![Dashboard](Images/dashboard.PNG)
 
 
 **Q&A LLM Model with Gemini:** Built a question-answering system using the Gemini large language model on the insurance database, enabling Auto insurance company to easily retrieve specific information and gain deeper understanding of the data.<br>
-![Input interface](https://github.com/nithin42/capstone/assets/52503252/53b09dcc-01cd-42e3-ba08-8973b0915507)
+![Input interface](Images/QandAStreamlit.png)
 
 ## Impact
 <ul>
@@ -41,7 +42,7 @@ To address customer retention challenges faced by a US auto insurance company X 
 **Databases:** MySQL<br>
 **Tools and Technologies:**  AWS, MS Power​BI, MS Excel, GitHub <br>
 **IDE:** Jupyter ​Notebook, Visual ​Studio ​Code <br>
-**API:** Gemini LLM
+**API:** Gemini LLM, AWS S3, MySQL
 <hr>
 This project showcases expertise in leveraging data science and machine learning to solve real-world business problems, specifically within the auto insurance industry. The developed solution provides a comprehensive framework for understanding, predicting, and utilizing customer lifetime value to improve customer retention and drive business growth.<br>
 
