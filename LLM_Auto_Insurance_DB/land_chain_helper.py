@@ -15,13 +15,13 @@ load_dotenv()  # take environment variables from .env (especially openai api key
 
 
 def db_chain():
-    db_user = "root"
-    db_password = "Godricshallow"
-    db_host = "localhost"
-    db_name = "autoinsurance"
+    db_user = os.getenv("db_user")
+    db_password = os.getenv("db_password")
+    db_host = os.getenv("db_host")
+    db_name = os.getenv("db_name")
 
     db = SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",sample_rows_in_table_info=3)
-    llm = GooglePalm(google_api_key="*****", temperature=0.1)
+    llm = GooglePalm(google_api_key=os.getenv("GOOGLE_API_KEY"), temperature=0.1)
     
 #os.environ[]
     db_chain = SQLDatabaseChain.from_llm(llm, db, verbose=True)
