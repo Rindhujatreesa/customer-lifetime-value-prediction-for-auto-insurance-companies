@@ -173,3 +173,8 @@ ORDER BY Monthly_Premium;
 -- QUERY 29 ---------- 
 SELECT MAX(`Customer_Lifetime_Value`), MIN(`Customer_Lifetime_Value`)
 FROM AutoInsurance.autoinsurance;
+
+-- QUERY 30 ----------
+SELECT EmploymentStatus, MAX(`Customer_Lifetime_Value`) AS `Maximum CLV`, MIN(`Customer_Lifetime_Value`) AS `Minimum CLV`
+FROM AutoInsurance.autoinsurance
+GROUP BY EmploymentStatus;
