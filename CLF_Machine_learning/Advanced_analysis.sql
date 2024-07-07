@@ -30,7 +30,10 @@ CASE
     END AS Customer_rating
 FROM table_new
 )
-SELECT * FROM ratings;
+-- SELECT * FROM ratings;
+SELECT Customer_rating, Segment, COUNT(Customer_rating)AS Number_of_Customers FROM ratings
+GROUP BY Customer_rating, Segment
+ORDER BY Segment;
 
 /*2. Customer Retention Analysis
 Identify customers who have not made a claim in the last 12 months and have had their policies for more than 24 months. 
@@ -214,4 +217,4 @@ FROM interquartiles, Quartiles
 )
 SELECT Customer, Total_Claim_Amount,Outlier_Status
 FROM outliers
-WHERE Outlier_Status = "Outlier";
+WHERE Outlier_Status != "Outlier";
