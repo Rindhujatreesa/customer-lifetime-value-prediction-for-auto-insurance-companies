@@ -10,6 +10,13 @@ SELECT Customer, Customer_Lifetime_Value,
 NTILE(4) OVER (ORDER BY Customer_Lifetime_Value) AS Segment
 FROM autoinsurance
 ),
+Quartiles AS (
+SELECT MAX(CASE WHEN Segment = 1 THEN Customer_Lifetime_Value ELSE NULL END) AS Q1,
+MAX(CASE WHEN Segment = 2 THEN Customer_Lifetime_Value ELSE NULL END) AS Median,
+MAX(CASE WHEN Segment = 3 THEN Customer_Lifetime_Value ELSE NULL END) AS Q3
+FROM Segments
+GROUP BY Segment
+),
 table_new AS (
 SELECT s.Customer_Lifetime_Value, s.Segment, State, Coverage, Education, EmploymentStatus, Gender, Income, 
 Location_Code,Marital_Status,Monthly_Premium_Auto, Months_Since_Last_Claim, Months_Since_Policy_Inception, 
@@ -31,9 +38,10 @@ CASE
 FROM table_new
 )
 -- SELECT * FROM ratings;
-SELECT Customer_rating, Segment, COUNT(Customer_rating)AS Number_of_Customers FROM ratings
-GROUP BY Customer_rating, Segment
-ORDER BY Segment;
+-- SELECT Customer_rating, Segment, COUNT(Customer_rating)AS Number_of_Customers FROM ratings
+-- GROUP BY Customer_rating, Segment
+-- ORDER BY Segment;
+SELECT * FROM Quartiles;
 
 /*2. Customer Retention Analysis
 Identify customers who have not made a claim in the last 12 months and have had their policies for more than 24 months. 
