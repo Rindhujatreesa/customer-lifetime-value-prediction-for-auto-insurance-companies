@@ -1,5 +1,5 @@
 import streamlit as st
-from land_chain_helper import db_chain
+from langchain_helper import db_chain
 
 st.title("Auto insurance: Database Q&A ")
 

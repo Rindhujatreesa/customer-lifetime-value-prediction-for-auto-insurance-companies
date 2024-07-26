@@ -23,7 +23,6 @@ def db_chain():
     db = SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",sample_rows_in_table_info=3)
     llm = GooglePalm(google_api_key=os.getenv("GOOGLE_API_KEY"), temperature=0.1)
     
-#os.environ[]
     db_chain = SQLDatabaseChain.from_llm(llm, db, verbose=True)
 
     return db_chain
