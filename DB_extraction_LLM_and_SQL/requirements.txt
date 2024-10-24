@@ -10,3 +10,4 @@ pymysql
 sentence-transformers
 chromadb
 cryptography
+google-generativeai
